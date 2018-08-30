@@ -57,6 +57,11 @@ public class MainActivity extends ToolBarActivity {
         initView();
     }
 
+    @Override
+    public String setupToolBarTitle() {
+        return "Android_MVP";
+    }
+
     private void initView() {
         Glide.with(this)
                 .load("https://avatars3.githubusercontent.com/u/19199353?s=40026%u=78ad14972326294fba1a1c42fa7303fe4f6b249b26%v=4")

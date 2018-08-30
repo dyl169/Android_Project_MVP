@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <style name="toolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">@color/l2_base_toolbarbg</item>
+        <!-- 溢出菜单文字颜色 -->
+        <item name="android:actionMenuTextColor">@color/l2_base_white</item>
+    </style>
+
     <style name="arad_ProgressHUD" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>

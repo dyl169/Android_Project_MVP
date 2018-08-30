@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="@dimen/btn_height"
-    android:background="@color/l2_base_toolbarbg"
+    style="@style/toolbarTheme"
     app:contentInsetEnd="0dp"
     app:contentInsetStart="0dp">
 
@@ -15,49 +14,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+        android:background="@null"
         android:padding="@dimen/px40"
         android:src="@drawable/base_ic_back_selector"
-        android:background="@null"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/toolbar_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="@color/l2_base_black"
-        android:textSize="18sp"/>
+        android:textColor="@color/l2_base_white"
+        android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/toolbar_title_iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
 
     <ImageButton
         android:id="@+id/toolbar_rightBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
+        android:background="@null"
         android:padding="@dimen/px26"
         android:src="@drawable/base_ic_menu_selector"
-        android:background="@null"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/toolbar_rightTv"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:minWidth="@dimen/btn_height"
-        android:layout_margin="@dimen/px3"
-        android:paddingRight="@dimen/px40"
-        android:paddingLeft="@dimen/px40"
-        android:gravity="center"
         android:layout_gravity="right"
-        android:textSize="16sp"
+        android:layout_margin="@dimen/px3"
+        android:background="@null"
+        android:gravity="center"
+        android:minWidth="@dimen/btn_height"
+        android:paddingLeft="@dimen/px40"
+        android:paddingRight="@dimen/px40"
         android:textColor="@color/l2_base_black"
-        android:background="@null"/>
+        android:textSize="16sp" />
 
 </android.support.v7.widget.Toolbar>
