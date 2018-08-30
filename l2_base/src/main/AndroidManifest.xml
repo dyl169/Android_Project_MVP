@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.ike.l2_base">
+
+    <application>
+        <meta-data
+            android:name="com.ike.l2_base.glide.util.UnsafeOkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <activity android:name=".crash.DefaultCrashActivity"></activity>
+    </application>
+
+</manifest>

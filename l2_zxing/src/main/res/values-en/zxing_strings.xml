@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="scan_tip">Please scan the qr code in the viewfinder</string>
+    <string name="scan_title">Scan QR Code</string>
+
+</resources>

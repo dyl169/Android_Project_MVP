@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/btn_height"
+    android:background="@color/l2_base_toolbarbg"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp">
+
+
+    <ImageButton
+        android:id="@+id/toolbar_leftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:padding="@dimen/px40"
+        android:src="@drawable/base_ic_back_selector"
+        android:background="@null"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/l2_base_black"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/toolbar_title_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/toolbar_rightBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/px26"
+        android:src="@drawable/base_ic_menu_selector"
+        android:background="@null"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/toolbar_rightTv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="@dimen/btn_height"
+        android:layout_margin="@dimen/px3"
+        android:paddingRight="@dimen/px40"
+        android:paddingLeft="@dimen/px40"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textSize="16sp"
+        android:textColor="@color/l2_base_black"
+        android:background="@null"/>
+
+</android.support.v7.widget.Toolbar>

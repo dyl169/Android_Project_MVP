@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/gallery_474747">
+
+    <LinearLayout
+        android:id="@+id/btnGalleryPickBack"
+        android:layout_width="50dp"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@mipmap/icon_back" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvGalleryFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableRight="@mipmap/gallery_pick_dropdown_white"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/gallery_all_folder"
+        android:textColor="@color/gallery_white"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/tvFinish"
+        android:layout_alignBottom="@+id/tvFinish"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="@string/gallery_finish"
+        android:textColor="@color/gallery_white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

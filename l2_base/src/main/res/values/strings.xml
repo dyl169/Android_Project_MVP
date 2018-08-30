@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">l2_base</string>
+    
+    <string name="l2_base_loading_defaulttip">加载中...</string>
+    <string name="base_unknown_error_code">程序出错</string>
+</resources>

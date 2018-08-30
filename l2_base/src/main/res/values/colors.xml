@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="l2_base_toolbarbg">#3F51B5</color>
+
+    <color name="l2_base_theme_color">@color/_1ADAFE</color>
+    <color name="l2_base_red">@color/_d84545</color>
+    <color name="l2_base_black">@color/_000000</color>
+    <color name="l2_base_white">@color/_ffffff</color>
+
+    <!-- 颜色值 -->
+    <color name="_ffffff">#ffffff</color>
+    <color name="_d84545">#d84545</color>
+    <color name="_969696">#969696</color>
+    <color name="_4FACFE">#4FACFE</color>
+    <color name="_00F2FE">#00F2FE</color>
+    <color name="_1ADAFE">#1ADAFE</color>
+    <color name="_000000">#000000</color>
+
+
+</resources>

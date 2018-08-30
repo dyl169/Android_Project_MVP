@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- start zxing -->
+    <color name="white">#FFF</color>
+    <color name="viewfinder_frame">#1ADAFE</color>
+    <color name="viewfinder_mask">#e0474747</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+
+    <!-- end zxing -->
+</resources>
