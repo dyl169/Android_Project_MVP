@@ -16,4 +16,7 @@ public interface BaseView {
     //当前页面隐藏加载条
     void hideProgress();
 
+    //当前页短提示
+    void showTip(String msg);
+
 }

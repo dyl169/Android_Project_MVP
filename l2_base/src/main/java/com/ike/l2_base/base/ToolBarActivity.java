@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.ike.l2_base.R;
 import com.ike.l2_base.utils.AnimUtil;
+import com.ike.l2_base.utils.MessageUtils;
 
 /**
  * @auth ike
@@ -183,5 +184,10 @@ public class ToolBarActivity<T extends BasePresenter, E extends BaseModel> exten
     @Override
     public void hideProgress() {
         showProgress(false);
+    }
+
+    @Override
+    public void showTip(String msg) {
+        MessageUtils.showShortToast(this, msg);
     }
 }
