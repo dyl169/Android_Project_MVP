@@ -15,11 +15,11 @@ import java.util.ArrayList;
  */
 
 public class FragmentPageAdapter extends FragmentPagerAdapter {
-    private ArrayList<String> titleList;
+    private String[] titleList;
     private ArrayList<MainPageFragment> fragmentList;
     private FragmentManager fragmentManager;
 
-    public FragmentPageAdapter(FragmentManager fm, ArrayList<String> titleList, ArrayList<MainPageFragment> fragmentList) {
+    public FragmentPageAdapter(FragmentManager fm, String[] titleList, ArrayList<MainPageFragment> fragmentList) {
         super(fm);
         this.titleList = titleList;
         this.fragmentList = fragmentList;
@@ -38,6 +38,6 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return titleList.get(position);
+        return titleList[position];
     }
 }

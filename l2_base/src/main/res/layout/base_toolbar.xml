@@ -4,9 +4,10 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="@dimen/btn_height"
-    style="@style/toolbarTheme"
+    android:background="@color/l2_base_toolbarbg"
     app:contentInsetEnd="0dp"
-    app:contentInsetStart="0dp">
+    app:contentInsetStart="0dp"
+    app:titleTextColor="@color/l2_base_white">
 
 
     <ImageButton

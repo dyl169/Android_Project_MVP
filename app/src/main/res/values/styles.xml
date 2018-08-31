@@ -13,8 +13,6 @@
         <item name="spinBars">false</item>
         <!--設定 drawer arrow 的顏色-->
         <item name="color">@android:color/white</item>
-        <item name="android:actionMenuTextColor">@android:color/white</item>
-        <item name="android:textColor">@android:color/white</item>
     </style>
 
 

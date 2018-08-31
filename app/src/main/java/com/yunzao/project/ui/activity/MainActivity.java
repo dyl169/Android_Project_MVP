@@ -31,8 +31,8 @@ public class MainActivity extends ToolBarActivity {
     private static String TAG = MainActivity.class.getName();
     private ActionBarDrawerToggle mDrawerToggle;
     private FragmentPageAdapter fragmentPageAdapter;
-    private ArrayList<String> titleArray;
     private ArrayList<MainPageFragment> fragmentArray;
+    private String[] titleArray = {"Android", "IOS", "福利", "前端", "休息视频", "拓展资源"};
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -57,16 +57,12 @@ public class MainActivity extends ToolBarActivity {
         initView();
     }
 
-    @Override
-    public String setupToolBarTitle() {
-        return "Android_MVP";
-    }
-
     private void initView() {
         Glide.with(this)
                 .load("https://avatars3.githubusercontent.com/u/19199353?s=40026%u=78ad14972326294fba1a1c42fa7303fe4f6b249b26%v=4")
                 .bitmapTransform(new CropCircleTransformation(this))
                 .into(myAvatar);
+
         mDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, 0, 0) {
             @Override
             public void onDrawerClosed(View drawerView) {
@@ -100,17 +96,11 @@ public class MainActivity extends ToolBarActivity {
         mDrawerToggle.syncState();
         drawerLayout.setDrawerListener(mDrawerToggle); //设置侧滑监听
 
-        titleArray = new ArrayList<>();
-        titleArray.add("Android");
-        titleArray.add("IOS");
-        titleArray.add("福利");
-        titleArray.add("前端");
 
         fragmentArray = new ArrayList<>();
-        fragmentArray.add(MainPageFragment.newInstance().setTitle("Android"));
-        fragmentArray.add(MainPageFragment.newInstance().setTitle("IOS"));
-        fragmentArray.add(MainPageFragment.newInstance().setTitle("福利"));
-        fragmentArray.add(MainPageFragment.newInstance().setTitle("前端"));
+        for (String title : titleArray) {
+            fragmentArray.add(MainPageFragment.newInstance().setTitle(title));
+        }
 
         fragmentPageAdapter = new FragmentPageAdapter(getSupportFragmentManager(), titleArray, fragmentArray);
         viewPager.setAdapter(fragmentPageAdapter);
