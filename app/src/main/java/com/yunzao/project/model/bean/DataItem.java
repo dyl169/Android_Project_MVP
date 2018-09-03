@@ -1,6 +1,6 @@
 package com.yunzao.project.model.bean;
 
-import java.util.List;
+import java.util.ArrayList;
 
 /**
  * @auth ike
@@ -31,7 +31,7 @@ public class DataItem {
     private String url;
     private boolean used;
     private String who;
-    private List<String> images;
+    private ArrayList<String> images;
 
     public String get_id() {
         return _id;
@@ -105,11 +105,11 @@ public class DataItem {
         this.who = who;
     }
 
-    public List<String> getImages() {
+    public ArrayList<String> getImages() {
         return images;
     }
 
-    public void setImages(List<String> images) {
+    public void setImages(ArrayList<String> images) {
         this.images = images;
     }
 
